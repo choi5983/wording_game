@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Word Game</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="word_game.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+	<div id="canvas"></div>
+	<div id="score">0</div>
+	<input type="text" id="word" name="word" placeholder="Enter Word" value="" />
+
+	<script type="text/javascript">
+		var a = new PlayGround('canvas', 'word', 'score');
+
+		setInterval("a.playGame()", 500);
+
+		$(document).ready(function()
+		{	
+			$('#word').focus();
+			$('#word').on("keyup", function(){
+				a.checkWord($('#word').val());
+			});
+		});
+	</script>
+
+</body>
+</html>

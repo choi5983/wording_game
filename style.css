@@ -1,0 +1,36 @@
+#canvas{
+	position:relative;
+	margin-top:10px;
+	width:500px;
+	height:400px;
+	border:2px solid black;
+	margin-bottom:10px;
+	font-size:15px;
+	font-family: "Courier New", Courier, monospace;
+	display:inline-block;
+	vertical-align: top;
+}
+#word {
+	font-size:18px;
+	padding:7px;
+	width:500px;
+}
+
+#score {
+	margin-top:10px;
+	margin-bottom:15px;
+	width:80px;
+	height:40px;
+	border:1px solid silver;
+	font-size:25px;
+	background-color:blue;
+	color:white;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding-top:15px;
+}
+
+input#word{
+	display:block;
+}
